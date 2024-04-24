@@ -4,7 +4,7 @@
 * {
     box-sizing: border-box;
 }
-
+ 
 body,
 h1,
 h2,
@@ -20,7 +20,7 @@ dd {
 li {
     list-style: none;
 }
-
+ 
 a {
     text-decoration: none;
     color: #000;
@@ -34,42 +34,14 @@ a {
 address {
     font-style: normal;
 }
+
 body {
     position: relative;
-    min-width: 1200px;
+    background: url(../img/animals-2025617_1281.png) no-repeat right top;
     margin: 0 auto;
 }
-
-
-/* body */
-
-
-
-    body {
-        background: url(../img/animals-2025617_1281.png) no-repeat right top;
-    
-    }
-    
-    body::before {
-        content: "";
-        position: absolute;
-        z-index: 9999;
-        left: 200px;
-        top: 0;
-        width: 40%;
-        height: 100vh;
-        background: url(../img/main_1.jpg) no-repeat;
-        transition: 1s 0.5s ease-in;
-    }
-    
-    body.on::before {
-        content: "";
-        top: 150px;
-        height: 80vh;
-    
-    }
-    
-    /* header */
+ 
+/* header */
     
     
     #head {
@@ -82,8 +54,6 @@ body {
     }
     
     
-    
-    
     #head h1 {
         width: 92px;
         height: 88px;
@@ -94,7 +64,6 @@ body {
         overflow: hidden;
         border-radius: 15px;
     }
-    
     
     
     /* gnb */
@@ -126,7 +95,6 @@ body {
     .sub>li {
         line-height: 30px;
     }
-    
     
     
     /* main  section 공통*/
@@ -163,7 +131,6 @@ body {
         opacity: 0;
     }
     
-    
     #main h2 span {
         display: block;
         margin-left: 100px;
@@ -173,20 +140,16 @@ body {
         font-size: 24px;
     }
     
-    
     /*  introduction */
     
     #introduction {
-        position: relative;
         height: 900px;
         position: relative;
-        background:
-            url(../img/textured-mulberry-paper.png) no-repeat center / cover;
+        background: url(../img/textured-mulberry-paper.png) no-repeat center / cover;
     
     }
     
-    
-    #introduction >div {
+    #introduction > div {
         width: 50%;
         height: 100%;
         display: flex;
@@ -197,24 +160,17 @@ body {
     
     }
     
-    
     #introduction p {
         line-height: 30px;
         font-size: 18px;
         padding-bottom: 40px;
     }
-    
-    
-    
-    #introduction img {
+      
+    #introduction .inimg {
         position: absolute;
         width: 712px;
-        /* height: 100%; */
-        top: 500px;
-        right: -200px;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        
+        top: 150px;
+        right: 0;
       }
     
     #introduction a {
@@ -228,24 +184,19 @@ body {
         font-size: 15px;
     }
     
-    #introduction a:hover {
-        color: #000;
-        background: rgb(223, 190, 106);
-    }
-    
-    
-    
     /* menu */
     
     #menu {
         background: url(../img/flower_1.png) no-repeat right top,
-            url(../img/flower.png) no-repeat left center,
-            url(../img/flower_1.png) no-repeat right bottom;
+                    url(../img/flower.png) no-repeat left center,
+                    url(../img/flower_1.png) no-repeat right bottom;
     
     }
-    
-    
-    
+
+    @media screen and ( min-width: 1360px ) {
+        #menu > div { width: 1360px; margin: 0 auto; }
+    }
+     
     
     #menu h2 {
         padding-top: 150px;
@@ -254,15 +205,10 @@ body {
     }
     
     
-    
-    
     #menu p {
         text-align: center;
         margin: 60px 0;
     }
-    
-    
-    
     
     #menu a {
         display: block;
@@ -292,6 +238,13 @@ body {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
     }
+
+ 
+    
+    @media screen and ( max-width: 1359px ) {
+        .menuInner { display: block; }
+    }
+    
     
     .menuInner dt {
         align-self: end;
@@ -319,8 +272,6 @@ body {
             url(../img/texture.png) no-repeat center / cover;
     
     }
-    
-    
     
     
     #news h2,
@@ -394,8 +345,7 @@ body {
     
     #sns .ins a {
         background: url(../img/sns_2.png) no-repeat;
-    
-    }
+     }
     
     #sns .face a {
         background: url(../img/sns_1.png) no-repeat;
@@ -403,3 +353,6 @@ body {
     
 
 
+/* @media screen and (max-width: 799px ) {
+    
+} */

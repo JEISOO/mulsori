@@ -1,25 +1,19 @@
-setTimeout(function(){
-    $("body").addClass('on')
-}, 10)
-$("#main p").delay(1500).animate({opacity: 1});
-$("#main h2").delay(2000).animate({opacity: 1});
 
 
 
-$(document).ready(function(){
+$("#main p").delay(50).animate({opacity: 1}, 1000);
+$("#main h2").delay(1000).animate({opacity: 1}, 1000);
 
-    const img = $(".inimg").height();
+// introduction 이미지 나타날때
 
-    $(window).scroll(function(){ 
-    const rollIt = $(this).scrollTop() >= img; 
-        
-
-    if(rollIt ){ 
-            $("#introduction .inimg").show().css({opacity: 1});
-        }
-        else{
-            $("#introduction .inimg").hide();
-        }
-    });
-    
+const img = $(".inimg").offset().top- 350;
+console.log(img)
+$(window).scroll(function(){ 
+    if ( $(window).scrollTop() >= img) { 
+        $("#introduction .inimg").animate({opacity: 1}, 1000);
+    }
 });
+
+
+
+
