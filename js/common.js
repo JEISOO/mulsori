@@ -1,12 +1,13 @@
-
-
-
+// 메인첫화면 로드
+// setTimeout(function(){
+//     $("body").addClass('on')
+// }, 10)
 $("#main p").delay(50).animate({opacity: 1}, 1000);
 $("#main h2").delay(1000).animate({opacity: 1}, 1000);
 
 // introduction 이미지 나타날때
 
-const img = $(".inimg").offset().top- 350;
+const img = $(".inimg").offset().top- 250;
 console.log(img)
 $(window).scroll(function(){ 
     if ( $(window).scrollTop() >= img) { 
