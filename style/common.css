@@ -1,276 +1,405 @@
 @charset "utf-8";
 
 /* 공통 */
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
-body, h1, h2, h3, ul, dl, dt, dd { margin: 0; padding: 0;}
-li { list-style: none;}
-a {text-decoration: none; color: #000;}
-.hidden { position: absolute;  left: -999px;}
+body,
+h1,
+h2,
+h3,
+ul,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
 
-address { font-style: normal; }
+li {
+    list-style: none;
+}
 
-body { position: relative; min-width: 1200px; 
-      margin: 0 auto;}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hidden {
+    position: absolute;
+    left: -999px;
+}
+
+address {
+    font-style: normal;
+}
+body {
+    position: relative;
+    min-width: 1200px;
+    margin: 0 auto;
+}
 
 
 /* body */
 
-body {
-    background: url(../img/animals-2025617_1281.png) no-repeat right top;
 
-}
-body::before { content: ""; 
-    position: absolute; 
-    z-index: 9999;
-    left: 200px; top: 0;
-    width: 40%; height: 100vh;
-    background: url(../img/main_1.jpg) no-repeat center / cover;
-    transition: 1s 0.5s ease-in;
-}
-body.on::before { content: ""; 
-    top: 150px; height: 80vh;
-}
 
-/* header */
-
+    body {
+        background: url(../img/animals-2025617_1281.png) no-repeat right top;
     
-#head { position: absolute; top: 30px; left: 0; z-index: 999; width: 100%; 
+    }
+    
+    body::before {
+        content: "";
+        position: absolute;
+        z-index: 9999;
+        left: 200px;
+        top: 0;
+        width: 40%;
+        height: 100vh;
+        background: url(../img/main_1.jpg) no-repeat;
+        transition: 1s 0.5s ease-in;
+    }
+    
+    body.on::before {
+        content: "";
+        top: 150px;
+        height: 80vh;
+    
+    }
+    
+    /* header */
+    
+    
+    #head {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: 999;
+        width: 100%;
         display: flex;
-        }
-
-
-
-
- #head h1 { width: 92px; height: 88px;
-    margin-left: 200px;
-    background: url(../img/logo.JPG) no-repeat center / contain;
-    text-indent: 100%; white-space: nowrap; 
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-
-
-/* gnb */
-#gnb { padding-top: 25px; 
-  
-}
-#snb {  display: flex; 
-        justify-content: center;
-        text-align: center; 
-        line-height: 30px;
-
     }
-
-
-#snb > li > a { display: block;
-    padding: 0 30px;
-   
-}
-
-.sub {
-    opacity: 0;
-    text-align: center;
-}
-
-.sub>li {line-height: 30px;}
-
-
-
-/* main  section 공통*/
-main { padding-top: 150px; }
-#main {     
-    position: relative;
-    z-index: 9;
-}
-
-
-
-#main > div { display: flex;
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-            height: 600px;
-            margin-left: 500px;  
-        }
-#main h2, #main p { opacity: 0 ;}
-#main h2 span { display: block; margin-left: 100px;}
-
-#main p {font-size: 24px; }
-
-
-/*  introduction */
-
-#introduction {
-    height: 900px; 
-    position: relative;
-    background: url(../img/Mask_group.png) no-repeat right 50px center / 40%,
-                url(../img/textured-mulberry-paper.png) no-repeat center / cover;
     
-   
+    
+    
+    
+    #head h1 {
+        width: 92px;
+        height: 88px;
+        margin-left: 200px;
+        background: url(../img/logo.JPG) no-repeat center / contain;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        border-radius: 15px;
     }
-
-
-#introduction > div { width: 50%; height: 100%;
-                    display: flex; 
-                    flex-direction: column; 
-                    justify-content: center;
-                    align-items: center;
-                    padding: 100px 0 0 300px;
-}
-
-
-#introduction p {  
+    
+    
+    
+    /* gnb */
+    #gnb {
+        padding-top: 25px;
+    
+    }
+    
+    #snb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        line-height: 30px;
+    
+    }
+    
+    
+    #snb>li>a {
+        display: block;
+        padding: 0 30px;
+    
+    }
+    
+    .sub {
+        opacity: 0;
+        text-align: center;
+    }
+    
+    .sub>li {
+        line-height: 30px;
+    }
+    
+    
+    
+    /* main  section 공통*/
+    main {
+        padding-top: 150px;
+    }
+    
+    #main {
+        position: relative;
+        z-index: 9;
+    }
+    
+    #main::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 200px;
+        width: 40%;
+        height: 850px;
+        background: url(../img/main_1.jpg) no-repeat center / cover;
+    }
+    
+    #main>div {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        margin-left: 500px;
+    }
+    
+    #main h2,
+    #main p {
+        opacity: 0;
+    }
+    
+    
+    #main h2 span {
+        display: block;
+        margin-left: 100px;
+    }
+    
+    #main p {
+        font-size: 24px;
+    }
+    
+    
+    /*  introduction */
+    
+    #introduction {
+        position: relative;
+        height: 900px;
+        position: relative;
+        background:
+            url(../img/textured-mulberry-paper.png) no-repeat center / cover;
+    
+    }
+    
+    
+    #introduction >div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0 0 300px;
+    
+    }
+    
+    
+    #introduction p {
         line-height: 30px;
         font-size: 18px;
-        padding-bottom: 30px;
-}
-
-
-
-
-#introduction a {display: block;
-                background-color: #000; color: #fff;
-                text-align: center; padding-top: 5px;
-               width: 150px; height: 30px; 
-              font-size: 15px;
-
-        }
-
-
-
-
-/* menu */
-
-#menu {
-    background: url(../img/flower_1.png) no-repeat right top, 
-                url(../img/flower.png) no-repeat left center, 
-                url(../img/flower_1.png) no-repeat right bottom ;
-
-       }
-
-
-
-
-#menu h2 { padding-top: 150px;
-         text-align: center;
-       background: url(../img/img_41.png)  no-repeat center ;
-      }
-
-
-
-
-#menu p { text-align: center; margin-bottom: 50px;}
-
-
-
-
-#menu a { display: block;
-    background-color: #000; color: #fff;
-
-        text-align: center; padding-top: 5px;
-       width: 150px; height: 30px; 
-       font-size: 15px;
-      margin: 100px auto;
+        padding-bottom: 40px;
     }
-
-
-
-/* menuInner */
-
-.menuInner {  font-size: 18px; 
-     position: relative;
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     text-align: center;}
-
-.menuInner dt { 
-    align-self: end;
-    margin-bottom: 50px; 
-    font-size: 35px;
-}
-
-.menuInner dd:last-of-type { grid-area: 1 / 1 / 3 / 2; } 
-
-.menuInner.me_2 dd:last-of-type { grid-area: 1 / 2 / 3 / 3; } 
-
-
-
-
-/* news */
-
-#news { padding: 100px 0 200px 0 ;
-    background: url(../img/winter_2.png) no-repeat left 10%, 
-                    url(../img/winter_1.png) no-repeat right bottom 10%,
-                    url(../img/texture.png) no-repeat center / cover ;
-       
-                }
-
-
-
-
-#news h2, #news p { text-align: center; padding: 10px; }
-
-#newsInner { 
-            width: 700px;
-            margin-left: auto; 
-            margin-right: auto;
-            white-space: nowrap;
-            line-height: 0;
-}
-
-#newsInner > li { border-bottom: 1px solid #a5a5a5;
-                padding: 30px;
-}
-
-#newsInner li:first-child { border-top: 2px solid #000;}
-
-#newsInner li:last-child {border-bottom: 2px solid #000;}
-
-#newsInner li a { display: block; 
-    text-align: left; 
-                }
-#newsInner li span { 
-    display: block; text-align: right; 
- }
-
-/* footer */
-
-#footer { 
+    
+    
+    
+    #introduction img {
+        position: absolute;
+        width: 712px;
+        /* height: 100%; */
+        top: 500px;
+        right: -200px;
+        transform: translate(-50%, -50%);
+        opacity: 0;
         
+      }
+    
+    #introduction a {
+        display: block;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding-top: 5px;
+        width: 150px;
+        height: 30px;
+        font-size: 15px;
+    }
+    
+    #introduction a:hover {
+        color: #000;
+        background: rgb(223, 190, 106);
+    }
+    
+    
+    
+    /* menu */
+    
+    #menu {
+        background: url(../img/flower_1.png) no-repeat right top,
+            url(../img/flower.png) no-repeat left center,
+            url(../img/flower_1.png) no-repeat right bottom;
+    
+    }
+    
+    
+    
+    
+    #menu h2 {
+        padding-top: 150px;
+        text-align: center;
+        background: url(../img/img_41.png) no-repeat center;
+    }
+    
+    
+    
+    
+    #menu p {
+        text-align: center;
+        margin: 60px 0;
+    }
+    
+    
+    
+    
+    #menu a {
+        display: block;
+        background-color: #000;
+        color: #fff;
+    
+        text-align: center;
+        padding-top: 5px;
+        width: 150px;
+        height: 30px;
+        font-size: 15px;
+        margin: 100px auto;
+    }
+    
+    #menu a:hover {
+        color: #000;
+        background: rgb(223, 190, 106);
+    }
+    
+    
+    /* menuInner */
+    
+    .menuInner {
+        font-size: 18px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    
+    .menuInner dt {
+        align-self: end;
+        margin-bottom: 50px;
+        font-size: 35px;
+    }
+    
+    .menuInner dd:last-of-type {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+    
+    .menuInner.me_2 dd:last-of-type {
+        grid-area: 1 / 2 / 3 / 3;
+    }
+    
+    
+    
+    
+    /* news */
+    
+    #news {
+        padding: 100px 0 200px 0;
+        background: url(../img/winter_2.png) no-repeat left 10%,
+            url(../img/winter_1.png) no-repeat right bottom 10%,
+            url(../img/texture.png) no-repeat center / cover;
+    
+    }
+    
+    
+    
+    
+    #news h2,
+    #news p {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #newsInner {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
+        line-height: 0;
+    }
+    
+    #newsInner>li {
+        border-bottom: 1px solid #a5a5a5;
+        padding: 30px;
+    }
+    
+    #newsInner li:first-child {
+        border-top: 2px solid #000;
+    }
+    
+    #newsInner li:last-child {
+        border-bottom: 2px solid #000;
+    }
+    
+    #newsInner li a {
+        display: block;
+        text-align: left;
+    }
+    
+    #newsInner li span {
+        display: block;
+        text-align: right;
+    }
+    
+    /* footer */
+    
+    #footer {
+    
         background: url(../img/logo.JPG) no-repeat 5% / contain,
-                    url(../img/texture.png) no-repeat center / cover;
+            url(../img/texture.png) no-repeat center / cover;
         border-top: 2px solid #aaa79d;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         padding: 30px 10px;
-      }
-
-#sns { 
-   display: flex;
-   flex-direction: row-reverse;
-}
-
-#sns li {  
-    display: block;
-     width: 40px; 
-     margin-left: 15px;
-}
-
-#sns li a { display: block;  height: 39px;
-    text-indent: 100%; white-space: nowrap; overflow: hidden;
-}
-
-#sns .ins a { 
-    background: url(../img/sns_2.png) no-repeat;
-   
-}
-#sns .face a {  
-                background: url(../img/sns_1.png) no-repeat;
-            }
-
-
+    }
+    
+    #sns {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    #sns li {
+        display: block;
+        width: 40px;
+        margin-left: 15px;
+    }
+    
+    #sns li a {
+        display: block;
+        height: 39px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    #sns .ins a {
+        background: url(../img/sns_2.png) no-repeat;
+    
+    }
+    
+    #sns .face a {
+        background: url(../img/sns_1.png) no-repeat;
+    }
+    
 
 
