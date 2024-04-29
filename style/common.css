@@ -156,7 +156,6 @@ address {
             }
             #main h2, #main p {color: #fff;
                 text-shadow: 5px 5px 4px rgba(0, 0, 0, 452);
-                
             }
         }
     
@@ -271,6 +270,11 @@ address {
         #menu > div { width: 1360px; margin: 0 auto; }
         #menu h2 {
             display: block;
+            font-size: 5vh;
+        }
+        #menu p {
+            margin: 50px 0;
+            font-size: 2vh;
         }
     }
 
@@ -278,19 +282,12 @@ address {
         #main {
           width: 100%; }
       
-      #main p { font-size: 20px; }
-      
       #menu {
           background: url(../img/flower_1.png) no-repeat right top,
               url(../img/flower.png) no-repeat left 40%,
               url(../img/flower_1.png) no-repeat right bottom;
           background-size: 100px;
           font-size: 18px;
-      }
-
-      #menu p {
-          margin: 50px 0;
-          font-size: 14px;
       }
 
       #menu img {
@@ -336,7 +333,6 @@ address {
         .menuInner dt {
             margin-bottom: 20px;
         }
-
         .menuInner > dd:nth-of-type(1) {
             padding-bottom: 30px;
             font-size: 1.5vh;
@@ -400,7 +396,6 @@ address {
             background: url(../img/winter_2_1.png) no-repeat right / contain,
                         url(../img/winter_1_1.png) no-repeat left /  contain ;
             background-size: 80px 45px;
-            margin: 0 100px ;
             font-size: 50px;
         }
         #newsInner {
@@ -412,7 +407,6 @@ address {
     /* footer */
     
     #footer {
-    
         background: url(../img/logo.JPG) no-repeat 5% / contain,
             url(../img/texture.png) no-repeat center / cover;
         border-top: 2px solid #aaa79d;
