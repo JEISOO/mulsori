@@ -74,7 +74,6 @@ address {
     /* gnb */
     #gnb {
         padding-top: 25px;
-    
     }
     
     #snb {
@@ -82,22 +81,41 @@ address {
         justify-content: center;
         text-align: center;
         line-height: 30px;
-    
     }
-    
+
     #snb>li>a {
         display: block;
         padding: 0 30px;
-    
     }
     
     .sub {
         opacity: 0;
         text-align: center;
     }
-    
+
     .sub>li {
         line-height: 30px;
+    }
+
+    .sub > li:hover > a { 
+        background-color: #ffffff;
+        opacity: 1;
+        height: 300px;
+}
+
+    @media screen and (max-width: 1388px ) {        
+        #gnb {
+            padding-top: 25px;
+        
+        }
+        
+        #snb {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+            line-height: 30px;
+        
+        }
     }
     
     /* main  section 공통*/
@@ -119,7 +137,6 @@ address {
         height: 850px;
         background: url(../img/main_1.jpg) no-repeat center / cover;
     }
-
   
     #main>div {
         display: flex;
@@ -270,38 +287,25 @@ address {
         #menu > div { width: 1360px; margin: 0 auto; }
         #menu h2 {
             display: block;
-            font-size: 5vh;
         }
         #menu p {
             margin: 50px 0;
-            font-size: 2vh;
+        }
+    }
+    @media screen and ( max-width: 1359px ) {
+        #menu h2 { 
+            display: block;
+            font-size: 3vh;            
+        }
+        #menu p {
+            font-size: 1.4vh;
+        }
+        #menu img {
+            width: 90%;
         }
     }
 
-    @media screen and ( max-width: 799px ) {
-        #main {
-          width: 100%; }
-      
-      #menu {
-          background: url(../img/flower_1.png) no-repeat right top,
-              url(../img/flower.png) no-repeat left 40%,
-              url(../img/flower_1.png) no-repeat right bottom;
-          background-size: 100px;
-          font-size: 18px;
-      }
 
-      #menu img {
-          width: 90%;
-      }
-
-      .menuInner > dt { display: block; 
-          padding-top: 20px;
-          font-size: 24px; }
-
-      .menuInner > dd {font-size: 16px; 
-                      padding-bottom: 50px;
-      }
-  }
     /* menuInner */
     
     .menuInner {
@@ -330,12 +334,12 @@ address {
         .menuInner { display: block; 
             margin-top: 100px;
         }
-        .menuInner dt {
+        .menuInner > dt {display: block;
             margin-bottom: 20px;
-        }
+            font-size: 24px; }
         .menuInner > dd:nth-of-type(1) {
             padding-bottom: 30px;
-            font-size: 1.5vh;
+            font-size: 1.4vh;
         }
     }
 
@@ -355,7 +359,7 @@ address {
     }
     
     #newsInner {
-        width: 700px;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         white-space: nowrap;
@@ -399,7 +403,7 @@ address {
             font-size: 50px;
         }
         #newsInner {
-            width: 500px;
+            width: 60%;
             font-size: 12px;
         }
     }
