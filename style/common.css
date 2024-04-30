@@ -295,16 +295,26 @@ address {
     @media screen and ( max-width: 1359px ) {
         #menu h2 { 
             display: block;
-            font-size: 3vh;            
-        }
-        #menu p {
-            font-size: 1.4vh;
         }
         #menu img {
             width: 90%;
         }
     }
 
+    @media screen and ( max-width: 799px ) {
+        #menu {
+            background: url(../img/flower_1.png) no-repeat right top,
+            url(../img/flower.png) no-repeat left 45%,
+            url(../img/flower_1.png) no-repeat right bottom;
+            background-size: 9vh;
+        }
+        #menu h2 { 
+            font-size: 4vh;            
+        }
+        #menu p {
+            font-size: 1.4vh;
+        }
+    }
 
     /* menuInner */
     
@@ -342,6 +352,8 @@ address {
             font-size: 1.4vh;
         }
     }
+
+    
 
     /* news */
     
@@ -452,13 +464,21 @@ address {
         #footer {
             background-image: url(../img/texture.png);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover ;
         }
     }
 
     @media screen and (max-width: 799px ) {
         #footer {
             flex-direction: column;
+        }
+        #sns .ins a {
+            background-size: 80%;
+        
+        }
+        
+        #sns .face a {
+            background-size: 80%;
         }
     }
 
