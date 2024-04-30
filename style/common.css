@@ -47,9 +47,7 @@ address {
     }
 }
 
-
 /* header */
-    
     
     #head {
         position: absolute;
@@ -92,15 +90,17 @@ address {
         opacity: 0;
         text-align: center;
     }
-
+    #snb>li:hover {
+        background-color: #fff;
+        height: 200px;
+    }
     .sub>li {
         line-height: 30px;
     }
 
-    .sub > li:hover > a { 
-        background-color: #ffffff;
+    .sub:hover { 
         opacity: 1;
-        height: 300px;
+        height: 50px;
 }
 
     @media screen and (max-width: 1388px ) {        
